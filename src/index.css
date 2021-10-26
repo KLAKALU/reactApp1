@@ -1,19 +1,5 @@
-/* mixins, variables, etc. */
-
-$gray-medium-light: #eaeaea;
-
-/* universal */
-
 body {
-  padding-top: 60px;
-}
-
-section {
-  overflow: auto;
-}
-
-textarea {
-  resize: vertical;
+  background-color: #f2f3f7;
 }
 
 .center {
@@ -23,27 +9,32 @@ textarea {
   }
 }
 
-/* typography */
-
-h1, h2,{
-  line-height: 1;
-}
 
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  font-family: "Times New Roman";
 }
 
-h2 {
-  font-size: 1.2em;
-  letter-spacing: -1px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-weight: normal;
-  color: $gray-light;
+ul {
+  display: inline-block;
+  height: 50px;
 }
 
+.content {
+  text-align:center;
+}
 
-/* header */
+.contents{
+  display: table;
+  border-width: 1px;
+  background-color: #efefef;
+  padding:8px;
+  margin-bottom:8px;
+  margin-left: 8px;
+  border-style: none solid solid none;
+  border-color: #ddd;
+  font-family: "Times New Roman";
+}
