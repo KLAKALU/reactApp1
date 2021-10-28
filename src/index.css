@@ -18,7 +18,7 @@ h1 {
   font-family: "Times New Roman";
 }
 
-ul {
+li {
   display: inline-block;
   height: 50px;
 }

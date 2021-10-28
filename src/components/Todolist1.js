@@ -56,7 +56,7 @@ const handleNewTitle =
         { todos.map((todo,index) => (
           <div class = "contents">
           <span>
-          Title:  
+          Title:
           </span>
           <span>
             {todo.title}
