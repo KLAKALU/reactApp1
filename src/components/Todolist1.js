@@ -48,9 +48,9 @@ const handleNewTitle =
     Add Title : <input value={ title } placeholder="Add Title" onChange=
     {handleNewTitle}/>
     </form>
-    <form onSubmit={ handleSubmit }>
-    Add Task : <input value={ task } placeholder="Add New Task" onChange=
-    {handleNewTask}/>
+      <form onSubmit={ handleSubmit }>
+      Add Task : <input value={ task } placeholder="Add New Task" onChange=
+      {handleNewTask}/>
     </form>
       <div>
         { todos.map((todo,index) => (
