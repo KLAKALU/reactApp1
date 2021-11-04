@@ -43,20 +43,12 @@ const handleNewTitle =
 
   return (
     <body>
-    <h1>TodoList</h1>
-    <form onSubmit={ handleSubmit }>
-    Add Title : <input value={ title } placeholder="Add Title" onChange=
-    {handleNewTitle}/>
-    </form>
-      <form onSubmit={ handleSubmit }>
-      Add Task : <input value={ task } placeholder="Add New Task" onChange=
-      {handleNewTask}/>
-    </form>
+    <h1>掲示板</h1>
       <div>
         { todos.map((todo,index) => (
           <div class = "contents">
           <span>
-          Title:
+          名前:
           </span>
           <span>
             {todo.title}
@@ -67,6 +59,15 @@ const handleNewTitle =
           </div>
           ))}
       </div>
+      <form onSubmit={ handleSubmit }>
+      名前 : <input value={ title } placeholder="No Name" onChange={handleNewTitle}/>
+    </form>
+    <form onSubmit={ handleSubmit }>
+       <textarea value={ task } placeholder="" cols="40" rows="8" onChange={handleNewTask}/>
+    </form>
+    <footer>
+      Hrizon
+    </footer>
     </body>
   );
 }
