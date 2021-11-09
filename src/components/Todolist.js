@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { FaGithub } from 'react-icons/fa';
 function TodoList() {
 
     const initialState = [
@@ -49,6 +49,9 @@ function TodoList() {
                 <li key={ index }>{ todo.task } <span onClick={ () => handleRemoveTask(index) }>X</span></li>
                 ))}
             </ul>
+            <span>
+                github <HeartFill color={id ? 'red' : 'gray'} size={32} onClick={clicked}/>
+            </span>
         </div>
   );
 }
